@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
+</head>
+<body>
+    <center>
+    <div class="container">
+        <h2><center>Calculator</center></h2>
+        <div class="Numbers">
+           <center><input class="display" type="text" placeholder="0"><br>
+            <div class="row">
+                <button class="purple" onclick="clearAll()">AC</button>
+                <button  class="purple" onclick="deleteLastChar()">DE</button>
+                <button  class="purple"onclick="appendChar('%')">%</button>
+                <button  class="purple" onclick="appendChar('/')">/</button>
+                <br>
+                <button onclick="appendChar('9')">9</button>
+                <button onclick="appendChar('8')">8</button>
+                <button onclick="appendChar('7')">7</button>
+                <button  class="purple" onclick="appendChar('*')">x</button>
+                <br>
+                <button onclick="appendChar('6')">6</button>
+                <button onclick="appendChar('5')">5</button>
+                <button onclick="appendChar('4')">4</button>
+                <button  class="purple" onclick="appendChar('-')">-</button>
+                <br>
+                <button onclick="appendChar('3')">3</button>
+                <button onclick="appendChar('2')">2</button>
+                <button onclick="appendChar('1')">1</button>
+                <button  class="purple" onclick="appendChar('+')">+</button><br>
+    
+                <button style="width: 84px; border-radius: 20px;"onclick="appendChar('0')">0</button>
+                <button onclick="appendChar('.')">.</button>
+                <button onclick="output()" style="background-color: rgb(255, 68, 0);">=</button>
+        </center> 
+        </div>
+    </div>
+  </center> 
+  <script src="script.js"></script>
+</body>
+</html>
